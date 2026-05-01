@@ -30,7 +30,7 @@ export default function About() {
             {/* Avatar placeholder with gradient ring */}
             <div className="relative inline-flex">
               <div className="w-52 h-52 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-br from-blue-600/20 via-violet-600/20 to-cyan-600/20 border border-slate-700/60 flex items-center justify-center">
-                <span className="text-7xl font-800 gradient-text select-none">RB</span>
+                <span className="text-7xl font-800 gradient-text select-none">RC</span>
               </div>
               {/* Floating badge */}
               <motion.div
