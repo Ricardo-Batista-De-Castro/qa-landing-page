@@ -49,7 +49,7 @@ export default function Tools() {
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-3">
           {tools.map(({ name, color, category }, i) => (
             <motion.div
               key={name}
@@ -58,7 +58,7 @@ export default function Tools() {
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.35, delay: i * 0.04 }}
               whileHover={{ scale: 1.06, y: -2 }}
-              className="group flex items-center gap-2 px-4 py-2.5 rounded-xl cursor-default transition-all duration-200"
+              className="group flex items-center gap-2 px-4 py-2.5 rounded-xl cursor-default transition-all duration-200 sm:w-auto"
               style={{
                 background: `${color}10`,
                 border: `1px solid ${color}25`,
