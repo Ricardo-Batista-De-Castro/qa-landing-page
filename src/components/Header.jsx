@@ -5,6 +5,7 @@ import { Menu, X, ChevronRight } from 'lucide-react'
 const navLinks = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Como Funciona', href: '#como-funciona' },
+  { label: 'Modelos de Contratação', href: '#modelos' },
   { label: 'Benefícios', href: '#beneficios' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Contato', href: '#contato' },
