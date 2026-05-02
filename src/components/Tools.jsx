@@ -9,7 +9,7 @@ const tools = [
   { name: 'GitHub Actions', color: '#60a5fa', category: 'CI/CD' },
   { name: 'CI/CD', color: '#f472b6', category: 'DevOps' },
   { name: 'JavaScript', color: '#facc15', category: 'Linguagem' },
-  { name: 'TypeScript', color: '#38bdf8', category: 'Linguagem' },
+  { name: 'Grafana', color: '#38bdf8', category: 'Observabilidade' },
   { name: 'Testes de API', color: '#a78bfa', category: 'Backend' },
   { name: 'Testes Web', color: '#60a5fa', category: 'Frontend' },
   { name: 'Testes de Performance', color: '#34d399', category: 'Carga' },

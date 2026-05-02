@@ -6,15 +6,38 @@ export default function Contact() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' })
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSent(true)
+    setLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch('https://formspree.io/f/xrejbdny', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (response.ok) {
+        setSent(true)
+        setForm({ name: '', email: '', company: '', message: '' })
+      } else {
+        const data = await response.json()
+        setError(data?.errors?.[0]?.message || 'Erro ao enviar. Tente novamente.')
+      }
+    } catch {
+      setError('Erro de conexão. Verifique sua internet e tente novamente.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -189,14 +212,32 @@ export default function Contact() {
                       className="w-full bg-slate-800/60 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500/30 transition-colors resize-none"
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
+                      {error}
+                    </p>
+                  )}
                   <motion.button
                     type="submit"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="btn-primary w-full py-3.5 flex items-center justify-center gap-2"
+                    disabled={loading}
+                    whileHover={loading ? {} : { scale: 1.02 }}
+                    whileTap={loading ? {} : { scale: 0.98 }}
+                    className="btn-primary w-full py-3.5 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Enviar mensagem
-                    <Send className="w-4 h-4" />
+                    {loading ? (
+                      <>
+                        <svg className="animate-spin w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+                        </svg>
+                        Enviando...
+                      </>
+                    ) : (
+                      <>
+                        Enviar mensagem
+                        <Send className="w-4 h-4" />
+                      </>
+                    )}
                   </motion.button>
                 </form>
               )}
