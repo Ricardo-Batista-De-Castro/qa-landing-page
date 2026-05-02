@@ -40,7 +40,7 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-28">
             {/* Logo */}
             <a
               href="#inicio"
@@ -48,10 +48,10 @@ export default function Header() {
               className="flex items-center group"
             >
               <img
-                src="/logo_rbc.png"
+                src="/logo_ricardo_castro.png"
                 alt="Ricardo Castro - Software Quality Engineer"
-                className="h-14 w-auto object-contain"
-                style={{ maxWidth: '220px' }}
+                className="h-[140px] w-auto object-contain"
+                style={{ maxWidth: '480px' }}
               />
             </a>
 

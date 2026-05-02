@@ -3,7 +3,7 @@ import { MessageCircle, Linkedin, Mail } from 'lucide-react'
 
 const navLinks = [
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Como funciona', href: '#processo' },
+  { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contato', href: '#contato' },
@@ -29,10 +29,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="#" className="inline-flex mb-4">
               <img
-                src="/logo_rbc.png"
+                src="/logo_ricardo_castro.png"
                 alt="Ricardo Castro - Software Quality Engineer"
-                className="h-16 w-auto object-contain"
-                style={{ maxWidth: '240px' }}
+                className="h-[140px] w-auto object-contain"
+                style={{ maxWidth: '480px' }}
               />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-6">
