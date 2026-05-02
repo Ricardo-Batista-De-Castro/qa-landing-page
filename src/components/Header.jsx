@@ -40,7 +40,7 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-28">
+          <div className="flex items-center justify-between h-20 sm:h-28">
             {/* Logo */}
             <a
               href="#inicio"
@@ -50,7 +50,7 @@ export default function Header() {
               <img
                 src="/logo_ricardo_castro.png"
                 alt="Ricardo Castro - Software Quality Engineer"
-                className="h-[140px] w-auto object-contain"
+                className="h-[72px] sm:h-[140px] w-auto object-contain"
                 style={{ maxWidth: '480px' }}
               />
             </a>
@@ -97,28 +97,48 @@ export default function Header() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
-            className="fixed top-16 left-0 right-0 z-40 bg-[#020617]/95 backdrop-blur-xl border-b border-white/5 lg:hidden"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="fixed inset-0 z-40 bg-[#020617] lg:hidden overflow-y-auto"
           >
-            <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
-              {navLinks.map((link) => (
-                <a
+            {/* Header area inside the menu */}
+            <div className="flex items-center justify-between h-20 sm:h-28 px-4 sm:px-6 border-b border-white/5">
+              <img
+                src="/logo_ricardo_castro.png"
+                alt="Ricardo Castro"
+                className="h-[72px] sm:h-[140px] w-auto object-contain"
+              />
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition-all"
+                aria-label="Fechar menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Nav links */}
+            <div className="px-4 sm:px-6 py-6 flex flex-col gap-1">
+              {navLinks.map((link, i) => (
+                <motion.a
                   key={link.href}
                   href={link.href}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.05 }}
                   onClick={(e) => { e.preventDefault(); handleNav(link.href) }}
-                  className="px-4 py-3 text-sm font-500 text-slate-300 hover:text-white rounded-xl hover:bg-white/5 transition-all"
+                  className="px-4 py-4 text-base font-500 text-slate-200 hover:text-white rounded-xl hover:bg-white/5 transition-all border-b border-white/5 last:border-0"
                 >
                   {link.label}
-                </a>
+                </motion.a>
               ))}
-              <div className="mt-3 pt-3 border-t border-white/5">
+              <div className="mt-6">
                 <a
                   href="#contato"
                   onClick={(e) => { e.preventDefault(); handleNav('#contato') }}
-                  className="btn-primary w-full justify-center text-sm py-3"
+                  className="btn-primary w-full justify-center text-base py-4"
                 >
                   Solicitar análise gratuita
                   <ChevronRight className="w-4 h-4" />
