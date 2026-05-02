@@ -58,7 +58,7 @@ export default function PricingModels() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="modelos" className="relative py-24 overflow-hidden">
+    <section id="modelos" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[500px] h-[400px] bg-violet-600/5 rounded-full blur-3xl" />
       </div>
@@ -68,7 +68,7 @@ export default function PricingModels() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span className="badge bg-violet-500/10 text-violet-400 border border-violet-500/20 mb-4">
             Modelos de contratação

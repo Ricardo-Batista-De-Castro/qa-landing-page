@@ -73,7 +73,7 @@ export default function Problems() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="problemas" className="relative py-24 overflow-hidden">
+    <section id="problemas" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-red-600/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-violet-600/5 rounded-full blur-3xl" />
@@ -85,7 +85,7 @@ export default function Problems() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span className="badge bg-red-500/10 text-red-400 border border-red-500/20 mb-4">
             Problemas comuns
@@ -99,7 +99,7 @@ export default function Problems() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
           {problems.map((p, i) => (
             <ProblemCard key={p.title} {...p} index={i} />
           ))}

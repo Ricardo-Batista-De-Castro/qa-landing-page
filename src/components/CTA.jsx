@@ -7,7 +7,7 @@ export default function CTA() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="cta" className="relative py-24 overflow-hidden">
+    <section id="cta" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-violet-600/10 to-cyan-600/10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-violet-600/8 rounded-full blur-3xl" />

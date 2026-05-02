@@ -83,7 +83,7 @@ export default function FAQ() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="faq" className="relative py-24 overflow-hidden">
+    <section id="faq" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 right-0 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl" />
       </div>
@@ -93,7 +93,7 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-10"
         >
           <span className="badge bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mb-4">
             Dúvidas frequentes

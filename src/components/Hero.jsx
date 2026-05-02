@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center pt-16 overflow-hidden"
+      className="relative pt-16 overflow-hidden"
     >
       {/* Background glows */}
       <div className="absolute inset-0 pointer-events-none">
@@ -42,7 +42,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 text-center">
 
         {/* Personal identification */}
         <motion.div
@@ -52,7 +52,7 @@ export default function Hero() {
           custom={0}
           className="mb-4"
         >
-          <span className="text-sm sm:text-base font-semibold tracking-widest uppercase text-slate-400 letter-spacing-wide">
+          <span className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-widest uppercase text-slate-400 letter-spacing-wide">
             Ricardo Castro
             <span className="mx-3 text-slate-600">·</span>
             <span className="gradient-text">Software Quality Engineer</span>

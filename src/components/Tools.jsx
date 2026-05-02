@@ -25,7 +25,7 @@ export default function Tools() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="ferramentas" className="relative py-24 overflow-hidden">
+    <section id="ferramentas" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-violet-600/5 rounded-full blur-3xl" />
       </div>
@@ -35,7 +35,7 @@ export default function Tools() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-10"
         >
           <span className="badge bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">
             Ferramentas & Tecnologias

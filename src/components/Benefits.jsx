@@ -17,7 +17,7 @@ export default function Benefits() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="beneficios" className="relative py-24 overflow-hidden">
+    <section id="beneficios" className="relative py-14 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-600/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
@@ -28,7 +28,7 @@ export default function Benefits() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span className="badge bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
             Benefícios
