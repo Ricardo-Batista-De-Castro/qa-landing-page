@@ -106,7 +106,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:contato@ricardoqa.com"
+              href="mailto:ricardocastrobc@hotmail.com"
               className="flex items-center gap-4 p-5 rounded-2xl border border-slate-800 hover:border-violet-500/40 hover:bg-violet-500/5 transition-all duration-200 group"
             >
               <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0">
@@ -114,7 +114,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-slate-500 mb-0.5">E-mail</p>
-                <p className="text-sm font-600 text-white group-hover:text-violet-400 transition-colors">contato@ricardoqa.com</p>
+                <p className="text-sm font-600 text-white group-hover:text-violet-400 transition-colors">ricardocastrobc@hotmail.com</p>
                 <p className="text-xs text-slate-500 mt-0.5">Enviar e-mail</p>
               </div>
             </a>
