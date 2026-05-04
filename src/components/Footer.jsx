@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-slate-800/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Ricardo Batista De Castro — QA Engineer. Todos os direitos reservados.
+            © {new Date().getFullYear()} Ricardo Castro — QA Engineer. Todos os direitos reservados.
           </p>
           <p className="text-xs text-slate-600">
             Desenvolvido por Ricardo Castro
