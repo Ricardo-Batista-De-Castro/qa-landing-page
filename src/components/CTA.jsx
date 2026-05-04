@@ -41,7 +41,7 @@ export default function CTA() {
               <ArrowRight className="w-4 h-4" />
             </motion.a>
             <motion.a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511973185149"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
