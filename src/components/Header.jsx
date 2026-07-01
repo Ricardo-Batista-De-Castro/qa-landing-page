@@ -48,7 +48,7 @@ export default function Header() {
               className="flex items-center group"
             >
               <img
-                src="/logo_ricardo_castro.png"
+                src="/logo_ricardo_castro_1.png"
                 alt="Ricardo Castro - Software Quality Engineer"
                 className="h-[72px] sm:h-[140px] w-auto object-contain"
                 style={{ maxWidth: '480px' }}
@@ -106,7 +106,7 @@ export default function Header() {
             {/* Header area inside the menu */}
             <div className="flex items-center justify-between h-20 sm:h-28 px-4 sm:px-6 border-b border-white/5">
               <img
-                src="/logo_ricardo_castro.png"
+                src="/logo_ricardo_castro_1.png"
                 alt="Ricardo Castro"
                 className="h-[72px] sm:h-[140px] w-auto object-contain"
               />

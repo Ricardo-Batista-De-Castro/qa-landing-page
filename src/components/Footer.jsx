@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="#" className="inline-flex mb-4">
               <img
-                src="/logo_ricardo_castro.png"
+                src="/logo_ricardo_castro_1.png"
                 alt="Ricardo Castro - Software Quality Engineer"
                 className="h-[140px] w-auto object-contain"
                 style={{ maxWidth: '480px' }}
