@@ -36,7 +36,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-6">
-              QA Engineer com mais de 10 anos de experiência em testes de software. Ajudo empresas a entregarem software mais estável, confiável e com menos bugs em produção.
+              QA Engineer com mais de 19 anos de experiência em controle de qualidade. Ajudo empresas a entregarem software mais estável, confiável e com menos bugs em produção.
             </p>
             <div className="flex items-center gap-3">
               <motion.a
