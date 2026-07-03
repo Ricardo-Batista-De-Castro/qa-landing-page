@@ -33,10 +33,10 @@ export default function About() {
           </div>
 
           {/* Top row: logo + text side by side */}
-          <div className="flex flex-col sm:flex-row gap-8 items-start">
+          <div className="flex flex-col sm:flex-row gap-8 items-stretch">
             {/* Logo card */}
-            <div className="relative flex-shrink-0">
-              <div className="w-52 h-52 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-br from-blue-600/20 via-violet-600/20 to-cyan-600/20 border border-slate-700/60 flex items-center justify-center overflow-hidden p-2">
+            <div className="relative flex-shrink-0 self-stretch">
+              <div className="w-52 sm:w-64 h-full min-h-[280px] rounded-3xl bg-gradient-to-br from-blue-600/20 via-violet-600/20 to-cyan-600/20 border border-slate-700/60 flex items-center justify-center overflow-hidden p-2">
                 <img
                   src="/logo_ricardo_castro.png"
                   alt="Ricardo Castro"
@@ -49,7 +49,7 @@ export default function About() {
                 className="absolute -bottom-4 -right-4 bg-slate-800/90 border border-slate-700 rounded-2xl px-4 py-2.5 shadow-xl"
               >
                 <p className="text-xs text-slate-400">QA Engineer</p>
-                <p className="text-sm font-700 text-white">10+ anos</p>
+                <p className="text-sm font-700 text-white">19+ anos</p>
               </motion.div>
             </div>
 
@@ -61,13 +61,19 @@ export default function About() {
               </h2>
               <div className="space-y-3 text-slate-300 leading-relaxed">
                 <p>
-                  QA Engineer com mais de <strong className="text-white">10 anos de experiência</strong> em garantia de qualidade de software. Especialista em identificar falhas, estruturar processos de testes e implementar automação para aumentar a confiabilidade dos sistemas.
+                  <strong className="text-white">Quality Engineer</strong> com mais de <strong className="text-white">19 anos de experiência em Qualidade</strong>, sendo <strong className="text-white">13 anos</strong> atuando na garantia da qualidade de produtos nas indústrias <strong className="text-white">alimentícia e farmacêutica</strong> e mais de <strong className="text-white">6 anos em Qualidade de Software</strong>. Especialista em identificar riscos, estruturar processos de testes e implementar automação para aumentar a confiabilidade dos sistemas.
                 </p>
+
                 <p>
-                  Possui experiência em <strong className="text-white">testes manuais</strong>, automação de frontend com <strong className="text-white">Playwright</strong>, automação de backend com <strong className="text-white">Karate Labs</strong>, testes de API, testes de performance e integração em pipelines de <strong className="text-white">CI/CD</strong>.
+                  Possui experiência em <strong className="text-white">todo o ciclo de vida de testes (STLC)</strong>, testes manuais, automação Web com <strong className="text-white">Playwright (JavaScript)</strong>, automação de APIs com <strong className="text-white">Karate Labs</strong> e <strong className="text-white">Postman</strong>, testes de performance com <strong className="text-white">K6</strong>, integração em pipelines de <strong className="text-white">CI/CD</strong>, validação de bancos de dados com <strong className="text-white">SQL</strong> e desenvolvimento de frameworks de automação.
                 </p>
+
                 <p>
-                  Atua com foco em ajudar empresas a entregarem software mais estável, confiável e alinhado às principais práticas utilizadas por <strong className="text-white">times ágeis do mercado</strong>.
+                  Também atua na construção de <strong className="text-white">indicadores e métricas de qualidade</strong> utilizando <strong className="text-white">Grafana integrado ao Jira</strong>, apoiando a tomada de decisão e a melhoria contínua dos processos de qualidade.
+                </p>
+
+                <p>
+                  Atua com foco em ajudar empresas a entregarem <strong className="text-white">software mais seguro, estável e confiável</strong>, reduzindo riscos por meio da prevenção de falhas, automação de testes e aplicação das melhores práticas de <strong className="text-white">Quality Engineering</strong>.
                 </p>
               </div>
             </div>
