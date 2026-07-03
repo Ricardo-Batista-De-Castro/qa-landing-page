@@ -14,7 +14,7 @@ const fadeUp = {
 }
 
 const credentials = [
-  { icon: Award, text: '19+ anos em QA' },
+  { icon: Award, text: '6+ anos em QA' },
   { icon: Zap, text: 'Especialista em automação' },
   { icon: Globe, text: 'Sistemas web, APIs e mobile' },
   { icon: Code2, text: 'Playwright & Karate Labs' },
@@ -69,7 +69,7 @@ export default function Hero() {
         >
           <span className="badge bg-blue-500/10 text-blue-400 border border-blue-500/20">
             <Shield className="w-3 h-3" />
-            QA Engineer Sênior · 19+ anos
+            QA Engineer Sênior · 6+ anos
           </span>
         </motion.div>
 
