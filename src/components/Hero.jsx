@@ -69,7 +69,7 @@ export default function Hero() {
         >
           <span className="badge bg-blue-500/10 text-blue-400 border border-blue-500/20">
             <Shield className="w-3 h-3" />
-            QA Engineer Sênior · 6+ anos
+            Software Quality Engineer · 6+ anos
           </span>
         </motion.div>
 
