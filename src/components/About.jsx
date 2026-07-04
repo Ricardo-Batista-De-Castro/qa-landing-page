@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { BadgeCheck, Layers, Cpu, GitBranch } from 'lucide-react'
 
 const highlights = [
-  { icon: BadgeCheck, color: '#60a5fa', text: '6+ anos em controle de qualidade' },
+  { icon: BadgeCheck, color: '#60a5fa', text: '19+ anos em controle de qualidade' },
   { icon: Layers, color: '#a78bfa', text: 'Automação Frontend & Backend' },
   { icon: Cpu, color: '#22d3ee', text: 'Testes de API & Performance' },
   { icon: GitBranch, color: '#34d399', text: 'Integração CI/CD' },
